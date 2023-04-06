@@ -6,6 +6,9 @@ body{
     background-color: #37248D;
     color:white;
 }
+button,select{
+    cursor: pointer;
+}
 
 nav {
     display: flex;
@@ -51,6 +54,9 @@ nav {
             color:white;
             background-color: #D05252;
         }
+        svg:active {
+            transform: scale(0.9);
+          }
     }
     
 }
@@ -76,4 +82,8 @@ nav {
         color:black;
         border:none;
     }
+}
+.bookmark-button{
+   cursor:pointer;
+   border: 1px solid blue;
 }

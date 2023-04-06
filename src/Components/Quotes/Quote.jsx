@@ -3,7 +3,9 @@ import { BsFillBookmarkPlusFill } from 'react-icons/bs'
 
 
 
-
+const addBookmark = () => {
+    console.log("bookmark added");
+};
 const Quote = ({quote,author,id}) => {
 
   return (
@@ -11,12 +13,11 @@ const Quote = ({quote,author,id}) => {
           <h1>{quote}</h1>
           <div>
               <h2>- {author}</h2>
-          <button > <BsFillBookmarkPlusFill/> </button>
+          <button className='bookmark-button' onClick={addBookmark}> <BsFillBookmarkPlusFill/> </button>
           </div>
-         
 
     </div>
   )
 }
 
-export default Quote
+export default Quote;

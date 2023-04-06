@@ -28,6 +28,7 @@ const Home = () => {
     }, []);
 
 
+    //generate new quote
     const generateQuote = () => {
         axios
             .get(url + '/quotes/random?tags=' + currentTag)
@@ -38,9 +39,6 @@ const Home = () => {
                 setCurrentTag(response.data[0].tags[0]);
             }).catch(err => console.log(err));
     }
-
-
-
 
 
     return (
