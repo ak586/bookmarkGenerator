@@ -87,3 +87,12 @@ nav {
    cursor:pointer;
    border: 1px solid blue;
 }
+.bookmark-list{
+    svg{
+        display:none;
+    }
+    >.quote{
+        margin:2rem auto;
+    }
+
+}

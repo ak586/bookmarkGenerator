@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Quote from '../Components/Quotes/Quote';
 import axios from 'axios';
 
+
 const Home = () => {
     const [quote, setQuote] = useState('');
     const [author, setAuthor] = useState('');
@@ -10,6 +11,7 @@ const Home = () => {
 
     const [id, setId] = useState([]);
     const [isPending, setIsPending] = useState(true);
+
     const url = 'https://api.quotable.io';
     useEffect(() => {
         axios
@@ -39,6 +41,8 @@ const Home = () => {
                 setCurrentTag(response.data[0].tags[0]);
             }).catch(err => console.log(err));
     }
+    
+    
 
 
     return (
